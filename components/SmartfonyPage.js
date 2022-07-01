@@ -17,6 +17,7 @@ const Smartfony = () => {
   const [showModal1, setShowModal1] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
   const [showBuyNowMobile, setShowBuyNowMobile] = useState(false);
+
   const phoneMarks = [
     {
       mark: "/images/marks/Apple.png",

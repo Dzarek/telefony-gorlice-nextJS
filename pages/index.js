@@ -26,7 +26,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <Header />
-      <Smartfony />
+      <div suppressHydrationWarning={true}>
+        {process.browser && <Smartfony />}
+      </div>
       <AccessoriesPage />
       <ServicePage />
       <AboutMePage />
