@@ -33,7 +33,7 @@ const ContactPage = () => {
             <h3>Gdzie znajdę sklep?</h3>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1291.431432905661!2d21.15740672731028!3d49.65688310522306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dc68da012df1f%3A0x87970223dcc5824f!2sKami%C5%84ski%20Robert.%20Telefony%20kom%C3%B3rkowe!5e0!3m2!1spl!2spl!4v1635809282037!5m2!1spl!2spl"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
               className="mapContact"
               title="map"
