@@ -25,25 +25,25 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {typeof window !== "undefined" ? (
-        <>
-          <Navbar />
-          <Header />
-          <div suppressHydrationWarning={true}>
-            {process.browser && <Smartfony />}
-          </div>
-          <AccessoriesPage />
-          <ServicePage />
-          <AboutMePage />
-          <GeneralInfo />
-          <FAQPage />
-          <DPD />
-          <ContactPage />
-          <Footer />
-        </>
+      {/* {typeof window !== "undefined" ? (
+        <> */}
+      <Navbar />
+      <Header />
+      <div suppressHydrationWarning={true}>
+        {process.browser && <Smartfony />}
+      </div>
+      <AccessoriesPage />
+      <ServicePage />
+      <AboutMePage />
+      <GeneralInfo />
+      <FAQPage />
+      <DPD />
+      <ContactPage />
+      <Footer />
+      {/* </>
       ) : (
         <Loader />
-      )}
+      )} */}
     </div>
   );
 }
