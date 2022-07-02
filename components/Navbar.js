@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      {offset === 0 ? (
+      {process.browser && window.pageYOffset === 0 ? (
         <Wrapper>
           <Logo />
           <div className="video-container">

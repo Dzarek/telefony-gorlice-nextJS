@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <Wrapper>
       <div className="logo-wrapper">
-        <div className="logo1">
+        <div className="logo1" suppressHydrationWarning={true}>
           <img src="/images/logo_aktiv.png" alt="logo" />
         </div>
         <div className="logo2">
