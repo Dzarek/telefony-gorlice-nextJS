@@ -38,6 +38,7 @@ export default function Home() {
           content="GRMdcoFs-83heCcyahrWtFvJ0Qg5z4ANC5q6YeHolQc"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
 
       {isLoading && <Loader />}
