@@ -33,6 +33,10 @@ export default function Home() {
           content="Jesteśmy na rynku już od 2003 roku. U nas kupisz, sprzedasz, zamienisz lub naprawisz telefon. Ponad to, znajdziesz tu wszystko czego potrzebujesz do swojego smartfona."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="google-site-verification"
+          content="GRMdcoFs-83heCcyahrWtFvJ0Qg5z4ANC5q6YeHolQc"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
