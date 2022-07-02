@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState, useEffect } from "react";
 
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
@@ -14,6 +15,15 @@ import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -25,13 +35,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* {typeof window !== "undefined" ? (
-        <> */}
+
+      {isLoading && <Loader />}
+
       <Navbar />
       <Header />
-      <div suppressHydrationWarning={true}>
-        {process.browser && <Smartfony />}
-      </div>
+      <Smartfony />
       <AccessoriesPage />
       <ServicePage />
       <AboutMePage />
@@ -40,10 +49,6 @@ export default function Home() {
       <DPD />
       <ContactPage />
       <Footer />
-      {/* </>
-      ) : (
-        <Loader />
-      )} */}
     </div>
   );
 }

@@ -164,7 +164,17 @@ span {
 .loader {
   width: 100vw;
   height: 100vh;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #111;
+  z-index: 9999999999999999;
+  animation: hiding 3s linear 1;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
 }
