@@ -87,12 +87,14 @@ class MyForm extends Component {
           buttonText="Akceptuje"
           cookieName="myAwesomeCookieName2"
           className="cookieInfo"
+          location="bottom"
           style={{
             background: "rgba(0,0,0, .8)",
             fontSize: "18px",
             display: "flex",
             justifyContent: "space-around",
             alignItems: "center",
+            width: "100vw",
           }}
           buttonStyle={{
             color: "white",
@@ -101,6 +103,7 @@ class MyForm extends Component {
             padding: "10px",
             borderRadius: "5px",
           }}
+          containerClasses="cookieClass"
           expires={7}
         >
           Strona korzysta z plików cookies. Pozostając na niej wyrażasz zgodę na
