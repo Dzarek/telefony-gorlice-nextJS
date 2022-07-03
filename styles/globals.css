@@ -175,7 +175,7 @@ span {
   align-items: center;
   background-color: #111;
   z-index: 9999999999999999;
-  animation: hiding 3s linear 1;
+  animation: hiding 1.5s linear 1;
 }
 
 @keyframes hiding {

@@ -109,7 +109,7 @@ const Navbar = () => {
                   onClick={toggleLinks}
                   to="akcesoria"
                   smooth={true}
-                  offset={-600}
+                  offset={-630}
                   duration={1000}
                 >
                   Akcesoria
@@ -129,7 +129,7 @@ const Navbar = () => {
                   onClick={toggleLinks}
                   to="o_mnie"
                   smooth={true}
-                  offset={-600}
+                  offset={-630}
                   duration={1500}
                 >
                   O nas
@@ -139,7 +139,7 @@ const Navbar = () => {
                   onClick={toggleLinks}
                   to="faq"
                   smooth={true}
-                  offset={-550}
+                  offset={-570}
                   duration={2000}
                 >
                   FAQ
@@ -148,7 +148,7 @@ const Navbar = () => {
                   onClick={toggleLinks}
                   to="dpd"
                   smooth={true}
-                  offset={-550}
+                  offset={-560}
                   duration={2000}
                 >
                   Pickup DPD
@@ -158,7 +158,7 @@ const Navbar = () => {
                   onClick={toggleLinks}
                   to="kontakt"
                   smooth={true}
-                  offset={-600}
+                  offset={-610}
                   duration={2000}
                 >
                   Kontakt
