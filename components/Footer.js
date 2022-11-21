@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 
 const logoJarek = "/images/logoJarek.png";
 
-const Footer = () => {
+const Footer = ({ thumbnails }) => {
   return (
     <Wrapper>
       <div className="footerSection">
@@ -107,11 +107,27 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      <div className="test">
+        {thumbnails.map((item, index) => {
+          return <img key={index} src={item} alt="" />;
+        })}
+      </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  .test {
+    position: fixed;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    img {
+      width: 50px;
+    }
+  }
   position: relative;
   .logoJarek {
     position: absolute;

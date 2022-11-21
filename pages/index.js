@@ -14,7 +14,7 @@ import ContactPage from "../components/ContactPage";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 
-export default function Home() {
+export default function Home({ thumbnails }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -54,7 +54,24 @@ export default function Home() {
       <FAQPage />
       <DPD />
       <ContactPage />
-      <Footer />
+      {thumbnails && <Footer thumbnails={thumbnails} />}
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const response = await fetch(
+    "https://data.focuseye.pl/wp-json/wp/v2/media?media_folder=59&per_page=100"
+  );
+  const data = await response.json();
+  const thumbnails = data.map((image) => {
+    const smallImg = image.media_details.sizes.full.source_url;
+    return smallImg;
+  });
+
+  return {
+    props: {
+      thumbnails,
+    },
+  };
 }
