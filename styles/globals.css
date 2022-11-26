@@ -24,6 +24,22 @@ body {
   --mainRed: rgb(150, 2, 2);
 }
 
+.testContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  z-index: 9999999999999999999999999999999999999999;
+}
+
+.testNEXT {
+  color: red;
+  font-size: 1.5rem;
+}
 
 .main-section {
   min-height: 100vh;
