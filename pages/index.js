@@ -53,7 +53,6 @@ export default function Home() {
           );
         })}
       </div> */}
-      <h1>aaa</h1>
       <Navbar />
       <Header />
       <Smartfony />
